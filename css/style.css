@@ -2,7 +2,7 @@
 Colors used:
 Primary Color (Purple): #825c63ff;
 Secondary Color (Blue): #729896ff;
-Accent Color (Light Blue): #a2fef8ff
+Accent Color (Light Blue): rgb(192, 229, 238)
 Background (Whitewash): #fcf0e9ff
 Text Color (Dark Purple): #1a1a1a
 */
@@ -10,7 +10,20 @@ Text Color (Dark Purple): #1a1a1a
 /*
 font-family: 'Poppins', sans-serif;
 */
-
+* {
+  box-sizing: border-box;
+}
+header {
+  background-color: #825c63ff;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+}
 body {
   background-color: #fcf0e9ff;
   font-family: "Poppins", sans-serif;
@@ -19,7 +32,22 @@ body {
   line-height: 1.6;
   color: #1a1a1a;
 }
+main {
+  padding-top: 133px;
+}
 
+footer {
+  background-color: #825c63ff;
+  padding: 10px;
+  margin: 10px;
+  border-bottom: 3px solid #4a4a4a;
+  display: inline-block;
+  width: 100%;
+}
+#contact {
+  padding: 5px;
+  display: inline-block;
+}
 h1,
 h2,
 h3,
@@ -47,6 +75,8 @@ h4 {
 
 img {
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
 }
 
 .button {
@@ -98,4 +128,66 @@ a:hover,
 a:focus {
   color: rgb(94, 150, 146);
   text-decoration: underline; /* Underlining when hovering over a link */
+}
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
+#hero {
+  background-color: rgb(192, 229, 238);
+  text-align: center; /* Centers text */
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}
+.logo {
+  max-width: 200px;
+}
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+nav > ul > li {
+  display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+nav > ul > li > a:visited {
+  /* visited link */
+  color: #1a1a1a;
+}
+nav > ul > li > a:active {
+  /* selected link */
+  color: #994c30;
+}
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: rgb(94, 150, 146);
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+.css-box-shadow {
+  /*start ------------*/
+  width: [object Object]px;
+  height: [object Object]px;
+  background: #f8f8f8;
+  border: solid #bdbdbd 1px;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  -webkit-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
 }
