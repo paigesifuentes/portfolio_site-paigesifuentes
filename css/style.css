@@ -78,17 +78,17 @@ img {
 }
 
 .button.contact:hover {
-  background-color: #ff7f50;
+  background-color: #994c30;
   color: #ffffff;
 }
 
 a {
-  color: #ff7f50;
+  color: rgb(94, 150, 146);
   text-decoration: none; /* No underlining */
 }
 a:visited {
   /* visited link */
-  color: #ff7f50;
+  color: #1a1a1a;
 }
 a:active {
   /* selected link */
@@ -96,6 +96,6 @@ a:active {
 }
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: rgb(94, 150, 146);
   text-decoration: underline; /* Underlining when hovering over a link */
 }
