@@ -73,8 +73,7 @@ h4 {
 }
 
 img {
-  width: 100%;
-  max-width: 100%px;
+  max-width: 100%;
   height: auto;
   margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
 }
@@ -161,9 +160,15 @@ a:focus {
   margin: 0;
   padding: 0.67em 0;
 }
+#proconnect {
+  text-align: center;
+  margin: 0;
+  padding: 0.67em 0;
+}
 .logo {
   max-width: 150px;
 }
+
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
