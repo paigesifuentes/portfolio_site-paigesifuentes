@@ -15,8 +15,7 @@ font-family: 'Poppins', sans-serif;
 }
 header {
   background-color: #825c63ff;
-  text-align: center;
-  padding: 10px;
+  padding: 10px 0 4px;
   margin: 10px;
   border-bottom: 3px solid #4a4a4a;
   display: inline-block;
@@ -33,7 +32,7 @@ body {
   color: #1a1a1a;
 }
 main {
-  padding-top: 10px;
+  padding-top: 56px;
 }
 
 footer {
@@ -163,15 +162,48 @@ a:focus {
   padding: 0.67em 0;
 }
 .logo {
-  max-width: 200px;
+  max-width: 150px;
+}
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+.navtoggle li:last-child {
+  display: none;
+}
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+.navtoggle.responsive li {
+  display: block;
+}
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 1em 0;
 }
 nav > ul > li {
   display: inline-block;
+  min-width: 641px;
 }
 nav > ul > li > a {
   padding: 0 15px;
