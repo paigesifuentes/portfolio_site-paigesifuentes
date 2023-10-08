@@ -18,6 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <!--icon kit from Fontawesome-->
+    <script src="https://kit.fontawesome.com/b0f97e7a41.js" crossorigin="anonymous"></script>
     <!--corectly sizes images for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
@@ -26,24 +28,28 @@
   <body>
     <header>
       <div class="container">
-        <picture>
-          <source
-            srcset="img/psifuentes_portfolio_header-logo.png"
-            media="(max-width:500px)"
-          />
-          <img
-            src="img/psifuentes_portfolio_header-logo.png"
-            class="logo"
-            alt="Paige Sifuentes Header Logo"
-          />
-        </picture>
+        <div class="navtoggle" id="myNavtoggle">
+          <picture>
+            <source
+              srcset="img/psifuentes_portfolio_header-logo.png"
+              media="(max-width:500px)"
+            />
+            <img
+              src="img/psifuentes_portfolio_header-logo.png"
+              class="logo"
+              alt="Paige Sifuentes Header Logo"
+            />
+          </picture>
+        </div>
         <nav>
           <ul>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
           </ul>
         </nav>
+        </div>
       </div>
     </header>
     <main>
@@ -768,6 +774,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
