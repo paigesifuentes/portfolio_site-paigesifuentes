@@ -18,6 +18,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <!--icon kit from Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/b0f97e7a41.js"
+      crossorigin="anonymous"
+    ></script>
     <!--corectly sizes images for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
@@ -26,24 +31,36 @@
   <body>
     <header>
       <div class="container">
-        <picture>
-          <source
-            srcset="img/psifuentes_portfolio_header-logo.png"
-            media="(max-width:500px)"
-          />
-          <img
-            src="img/psifuentes_portfolio_header-logo.png"
-            class="logo"
-            alt="Paige Sifuentes Header Logo"
-          />
-        </picture>
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html" class="logo">
+            <picture>
+              <source
+                srcset="img/psifuentes_portfolio_header-logo.png"
+                media="(max-width:500px)"
+              />
+              <img
+                src="img/psifuentes_portfolio_header-logo.png"
+                class="logo"
+                alt="Paige Sifuentes Header Logo"
+              />
+            </picture>
+          </a>
+          <nav>
+            <ul>
+              <li><a href="index.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+              <li>
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
