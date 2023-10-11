@@ -3,7 +3,7 @@ Colors used:
 Primary Color (Purple): #825c63ff;
 Secondary Color (Blue): #729896ff;
 Accent Color (Light Blue): rgb(192, 229, 238)
-Background (Whitewash): #fcf0e9ff
+Background (Whitewash): #f3f3f3ff
 Text Color (Dark Purple): #1a1a1a
 */
 
@@ -24,7 +24,7 @@ header {
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.3);
 }
 body {
-  background-color: #fcf0e9ff;
+  background-color: #f3f3f3ff;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 300;
